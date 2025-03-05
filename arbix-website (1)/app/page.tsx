@@ -62,13 +62,18 @@ export default function Home() {
           <Link href="/#benefits" className="text-gray-300 hover:text-blue-400 transition text-sm tracking-wide">
             Benefits
           </Link>
+          <Link href="/dashboard" className="text-gray-300 hover:text-blue-400 transition text-sm tracking-wide">
+            Dashboard
+          </Link>
           <Link href="/docs" className="text-gray-300 hover:text-blue-400 transition text-sm tracking-wide">
             Docs
           </Link>
         </nav>
-        <Button className="glass-button text-white rounded-full px-6 py-1.5 text-sm font-light tracking-wide">
-          Join Waitlist
-        </Button>
+        <Link href="/dapp">
+          <Button className="glass-button text-white rounded-full px-6 py-1.5 text-sm font-light tracking-wide">
+            Try arbiX
+          </Button>
+        </Link>
       </header>
 
       <main>
@@ -89,9 +94,11 @@ export default function Home() {
               protecting from MEV attacks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="glass-button text-white rounded-full px-8 py-6 text-base font-light tracking-wide">
-                Join Waitlist
-              </Button>
+              <Link href="/dapp">
+                <Button className="glass-button text-white rounded-full px-8 py-6 text-base font-light tracking-wide">
+                  Try arbiX
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 className="border-blue-500/30 text-blue-400 hover:bg-blue-950/50 rounded-full px-8 py-6 text-base font-light tracking-wide"
@@ -208,15 +215,15 @@ export default function Home() {
         {/* CTA Section */}
         <section className="container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto glass-card rounded-3xl p-10 text-center border border-blue-500/30 backdrop-blur-sm">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6 heading-grotesque">
-              Ready to optimize your DeFi trading?
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-medium mb-6 heading-grotesque">Ready to start trading?</h2>
             <p className="text-xl text-gray-300 mb-8 font-light">
-              Join our waitlist to be among the first to access arbiX when we launch.
+              Try arbiX now and experience optimized arbitrage trading with MEV protection.
             </p>
-            <Button className="glass-button text-white rounded-full px-8 py-6 text-base font-light tracking-wide">
-              Join Waitlist
-            </Button>
+            <Link href="/dapp">
+              <Button className="glass-button text-white rounded-full px-8 py-6 text-base font-light tracking-wide">
+                Try arbiX
+              </Button>
+            </Link>
           </div>
         </section>
       </main>

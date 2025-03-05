@@ -50,6 +50,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: 222.2 84% 4.9%;
   --foreground: 210 40% 98%;
@@ -117,14 +141,16 @@ body {
 }
 
 .heading-grotesque {
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: "Space Grotesk", "Darker Grotesque", sans-serif;
   letter-spacing: -0.02em;
+  font-weight: 500;
 }
 
 .heading-serif {
   font-family: "IBM Plex Serif", serif;
   font-style: italic;
   font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .font-helvetica {
@@ -182,5 +208,18 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(59, 130, 246, 0.7);
+}
+
+.numeric-display {
+  font-family: "Space Grotesk", monospace;
+  letter-spacing: -0.01em;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.section-title {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
